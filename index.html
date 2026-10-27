@@ -503,7 +503,7 @@ const pct=(a,b)=>b?Math.min(100,Math.round((a/b)*100)):0;
 const bar=p=>`<div class="bar"><i style="width:${p}%"></i></div>`;
 
 let editTaskId=null, hOff=0;
-const MSGS=['مهما كان يومك ثقيلاً، أنتِ أقوى مما تظنين 🌷','خطوة صغيرة اليوم أفضل من خطة كبيرة غداً ✨','أنتِ تستحقين كل الخير، وكل يوم يقرّبك مما تحلمين به 💖','خذي نفساً عميقاً.. أنتِ تبلين بلاءً حسناً 🌸'];
+const MSGS=['وَما كُنتُ مِمَّنْ يَدْخُلُ العِشْقُ قَلْبَهُ وَلَكِنَّ مَنْ يُبْصِرْ جُفُونَكِ يَعْشَقِ'];
 const msgOfDay=()=>{const a=[D.settings.msg,...MSGS]; return a[Math.floor(new Date(today()+'T12:00')/864e5)%a.length];};
 const greet=()=>{const h=nowCairo().getHours(); return h>=5&&h<12?'صباح الخير':h<18?'نهارك سعيد':'مساء الخير';};
 
